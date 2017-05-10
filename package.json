@@ -1,0 +1,16 @@
+{
+  "name": "@offbyonestudios/formulas",
+  "version": "1.0.0",
+  "description": "Linear Function Evaluator",
+  "main": "src/index.js",
+  "repository": "https://github.com/OffByOneStudios/formulas",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "make-parser": "node_modules/.bin/pegjs -o peg/parser.js peg/parser.pegjs"
+  },
+  "author": "OffByOne Studios",
+  "license": "MIT",
+  "dev-dependencies": {
+    "pegjs": "^0.10.0"
+  }
+}
