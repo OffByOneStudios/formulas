@@ -14,3 +14,5 @@ for(let i = 0; i< 1000; i++)
 const e = new Date();
 
 console.log(`Time:${e.getTime() - s.getTime()}`);
+
+console.log(f.raw)

@@ -19,6 +19,7 @@ function evaluate(formula) {
   var formula_struct = parser.parse(formula.replace(/[a-zA-Z]+/, 'x'))
   let res =  evaluator.bind(formula_struct);
   Object.defineProperty(res, 'formula', {value: () => { return formula_struct}})
+  res.raw = formula;
   return res;
 }
 exports.default = evaluate
